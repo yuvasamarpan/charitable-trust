@@ -1,0 +1,122 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.transparent {
+    background: transparent;
+}
+
+.logo {
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+    height: 60px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-links a,
+.dropdown-toggle {
+    margin-left: 1.5rem;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar-links a:hover,
+.dropdown-toggle:hover {
+    color: #111;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+}
+
+/* .dropdown-menu {
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    display: none;
+    min-width: 180px;
+    z-index: 999;
+    animation: fadeIn 0.3s ease;
+} */
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown links */
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+    transition: background 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+    background: #f0f0f0;
+    color: #000;
+}
+
+/* Optional: subtle animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    z-index: 9999;
+    /* 🔥 ensure it stays on top */
+    display: none;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}

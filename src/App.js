@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import About from './components/About/About';
+import HighlightsSection from './components/HighlightsSection/HighlightsSection';
+import GalleryPreview from './components/Gallery/ GalleryPreview';
+import Footer from './components/Footer/Footer';
+import AboutUsPage from './components/About/AboutUsPage';
+import GalleryPage from './components/Gallery/GalleryPage';
+import AlbumView from './components/Gallery/AlbumView';
+import ContactPage from './components/Contact/ContactPage';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <div style={{ height: '80px' }} /> {/* ✅ Spacer below navbar */}
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <HighlightsSection />
+              <GalleryPreview />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route path="/about" element={<AboutUsPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/gallery/:albumId" element={<AlbumView />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </Router>
   );
 }
 

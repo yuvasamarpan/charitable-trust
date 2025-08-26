@@ -1,0 +1,111 @@
+/* .gallery-page {
+    padding: 4rem 2rem;
+    background: #f9fafb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.year-section {
+    margin-bottom: 4rem;
+}
+
+.year-heading {
+    font-size: 1.8rem;
+    color: #2563eb;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #2563eb;
+    padding-left: 1rem;
+}
+
+.album-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+.album-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 260px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.album-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.album-info {
+    padding: 1rem;
+}
+
+.album-info h3 {
+    font-size: 1.2rem;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.album-info p {
+    font-size: 0.95rem;
+    color: #6b7280;
+    line-height: 1.4;
+} */
+
+.gallery-page {
+    padding: 4rem 2rem;
+}
+
+.gallery-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.album-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.album-card:hover {
+    transform: scale(1.03);
+}
+
+.album-cover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.album-info {
+    padding: 1rem;
+    text-align: center;
+}
