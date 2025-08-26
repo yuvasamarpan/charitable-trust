@@ -1,15 +1,14 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import HighlightsSection from './components/HighlightsSection/HighlightsSection';
-import GalleryPreview from './components/Gallery/ GalleryPreview';
+import GalleryPreview from '/Users/rahulchaubey/Projects/Personal/External/2.0/yuva-samarpan/src/components/Gallery/ GalleryPreview.jsx';
 import Footer from './components/Footer/Footer';
 import AboutUsPage from './components/About/AboutUsPage';
 import GalleryPage from './components/Gallery/GalleryPage';
 import AlbumView from './components/Gallery/AlbumView';
 import ContactPage from './components/Contact/ContactPage';
-
 
 function App() {
   return (
