@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/charitable-trust/static/css/main.51067919.css",
-    "main.js": "/charitable-trust/static/js/main.406b3fb7.js",
-    "static/js/453.943b00e5.chunk.js": "/charitable-trust/static/js/453.943b00e5.chunk.js",
+    "main.js": "/charitable-trust/static/js/main.972c87b6.js",
+    "static/js/453.924bf3a1.chunk.js": "/charitable-trust/static/js/453.924bf3a1.chunk.js",
     "static/media/16.jpg": "/charitable-trust/static/media/16.6243a41e7fba5ec23cf1.jpg",
     "static/media/14.jpg": "/charitable-trust/static/media/14.d66b9239574144c2a515.jpg",
     "static/media/15.jpg": "/charitable-trust/static/media/15.0d4f99481f6e70f78009.jpg",
@@ -50,11 +50,11 @@
     "static/media/slick.woff": "/charitable-trust/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/charitable-trust/index.html",
     "main.51067919.css.map": "/charitable-trust/static/css/main.51067919.css.map",
-    "main.406b3fb7.js.map": "/charitable-trust/static/js/main.406b3fb7.js.map",
-    "453.943b00e5.chunk.js.map": "/charitable-trust/static/js/453.943b00e5.chunk.js.map"
+    "main.972c87b6.js.map": "/charitable-trust/static/js/main.972c87b6.js.map",
+    "453.924bf3a1.chunk.js.map": "/charitable-trust/static/js/453.924bf3a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.51067919.css",
-    "static/js/main.406b3fb7.js"
+    "static/js/main.972c87b6.js"
   ]
 }
